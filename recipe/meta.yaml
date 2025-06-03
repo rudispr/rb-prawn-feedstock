@@ -1,5 +1,5 @@
 {% set name = "prawn" %}
-{% set version = "2.5.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -21,9 +21,8 @@ requirements:
     - ruby
   run:
     - {{ pin_compatible('ruby', max_pin='x.x') }}
-    - rb-ttfunk ~=1.8
-    - rb-matrix ~=0.4
-    - rb-pdf-core ~=0.10.0
+    - pdf-core ~> 0.9.0
+    - ttfunk ~> 1.7
 
 test:
   commands:
