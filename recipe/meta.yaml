@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-    sha256: f4e20e3b4f30bf5b9ae37dad15eb421831594553aa930b2391b0fa0a99c43cb6
+    sha256: 82062744f7126c2d77501da253a154271790254dfa8c309b8e52e79bc5de2abd
 
 build:
   noarch: generic
