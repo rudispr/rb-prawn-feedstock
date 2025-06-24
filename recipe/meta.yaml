@@ -1,5 +1,6 @@
 {% set name = "prawn" %}
 {% set version = "2.4.0" %}
+{% set hash = "82062744f7126c2d77501da253a154271790254dfa8c309b8e52e79bc5de2abd" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,11 +8,11 @@ package:
 
 source:
   - url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-    sha256: 82062744f7126c2d77501da253a154271790254dfa8c309b8e52e79bc5de2abd
+    sha256: {{ hash }}
 
 build:
   noarch: generic
-  number: 0
+  number: 1
   script:
     - gem install -N -l -V --norc --ignore-dependencies -n $PREFIX/bin {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
